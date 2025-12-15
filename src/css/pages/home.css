@@ -64,3 +64,122 @@ body {
 
 
 
+/* ---------- ABOUT ---------- */
+.about {
+  width: 100%;
+  background-color: var(--color-bg-main);
+  padding: 32px 16px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Nom */
+.about__name {
+  text-align: center;
+  color: var(--color-gold-soft);
+  font-family: var(--ff-text);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-bold);
+  margin: 0;
+}
+
+/* Sous-titre */
+.about__subtitle {
+  text-align: center;
+  color: var(--color-gold);
+  font-family: var(--ff-text);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-regular);
+  margin: 4px 0 20px;
+}
+
+/* Lignes decoratives */
+.about__divider {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto 24px;
+}
+
+.about__button {
+  position: relative;
+  width: 60%;
+  max-width: 232px;
+  aspect-ratio: 232/63;
+  margin: 24px auto 32px;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  display: block;
+}
+
+
+.about__button img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+}
+
+.about__button-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-gold-soft);
+  font-family: var(--ff-text);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-regular);
+  text-align: center;
+  pointer-events: none;
+  background: none;
+}
+
+
+/* La carte d'histoire */
+.story-card {
+  width: 90%;
+  max-width: 363px;
+  margin: 0 auto 32px;
+  padding: 35px 20px 25px 20px;
+  background-color: var(--color-accent-secondary);
+  border-radius: var(--radius-md);
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Les étoiles */
+.story-card .star {
+  position: absolute;
+  width: 18px;
+  height: auto;
+}
+
+.star--tl { top: 10px; left: 8px; }
+.star--tr { top: 10px; right: 8px; }
+.star--bl { bottom: 10px; left: 8px; }
+.star--br { bottom: 10px; right: 8px; }
+
+/* Text histoire */
+.story__text {
+  margin-bottom: 10px;
+  color: var(--color-text-main);
+  font-family: var(--ff-text);
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 200;
+  line-height: 1.29;
+
+}
+
+/* banner" */
+.about__banner {
+  width: 90%;
+  max-width: 350px;
+  height: auto;
+  margin: 24px auto 32px;
+  display: block;
+}
