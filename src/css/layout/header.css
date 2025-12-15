@@ -1,0 +1,53 @@
+/* =========================
+   HEADER
+   ========================= */
+
+.header {
+  width: 100%;
+  background-color: var(--color-bg-dark);
+}
+
+.header__inner {
+  max-width: 393px;
+  margin: 0 auto;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 12px;
+}
+
+.header__logo {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.header__title {
+  font-family: var(--ff-title);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  color: var(--color-gold-soft);
+  text-align: center;
+
+  flex: 1;
+}
+
+.header__menu-btn {
+  width: 34px;
+  height: 25px;
+
+  background: none;
+  border: none;
+  padding: 0;
+
+  cursor: pointer;
+}
+
+.header__menu-btn img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}

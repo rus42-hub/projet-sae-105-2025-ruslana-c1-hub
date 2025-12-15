@@ -6,8 +6,9 @@
 
   <title>Effet Matilda</title>
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="src/css/vendors/normalize.css">
+<link rel="stylesheet" href="src/css/style.css">
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,30 +19,26 @@
 
 <header class="header">
   <div class="header__inner">
-    <img src="img/logo/logo.png" alt="Logo du projet Effet Matilda" class="header__logo">
+    <img src="/assets/img/logo.svg" alt="logo" class="header__logo">
 
-    <h1 class="header__title">Effet Matilda</h1>
+    <h1 class="header__title">EFFET MATILDA</h1>
 
-    <button class="header__menu-btn" aria-label="Ouvrir le menu">
-      <img src="img/icons/menu.png" alt="">
+    <button class="header__menu-btn" id="openMenuBtn">
+      <img src="/assets/icons/menu.svg" alt="menu">
     </button>
   </div>
 
-  <nav class="menu" aria-hidden="true">
-    <ul class="menu__list">
-      <li><a href="#" class="menu__link">Accueil</a></li>
-      <li><a href="#" class="menu__link">Articles</a></li>
-      <li><a href="#" class="menu__link">Glossaire</a></li>
-      <li><a href="#" class="menu__link">Contact</a></li>
-    </ul>
-  </nav>
+
 </header>
+
+
+
 
 <main>
 
   <!-- HERO -->
   <section class="hero">
-    <img src="img/images/Sofia.png" alt="Portrait de Sofia Kovalevskaïa" class="hero__image">
+    <img src="/assets/img/Sofia.webp" alt="Portrait de Sofia Kovalevskaïa" class="hero__image">
 
     <div class="hero__dialogue">
       <img src="img/banners/Frame-dialogue.png" alt="" class="hero__frame">
@@ -107,15 +104,28 @@
 </main>
 
 <footer class="footer">
-  <img src="img/logo/logo.png" alt="" class="footer__logo">
+  <div class="footer__inner">
 
-  <p class="footer__text">
-    Projet réalisé en 2025 au département
-    <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank">
-      MMi de Montbéliard
-    </a>
-  </p>
+    <img src="/assets/img/logo.svg" alt="" class="footer__logo">
+    <img src="/assets/icons/mail.svg" alt="" class="footer__mail">
+
+    <p class="footer__text footer__text--line1">
+      Un projet visuel autour de la mémoire des femmes scientifiques
+    </p>
+
+    <p class="footer__text footer__text--line2">
+      Projet réalisé en 2025 —
+      <a class="footer__link"
+         href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/"
+         target="_blank">
+        MMi de Montbéliard
+      </a>
+    </p>
+
+  </div>
 </footer>
+
+
 
 <script src="js/main.js"></script>
 </body>

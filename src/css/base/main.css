@@ -1,0 +1,24 @@
+/* =================================
+   BASE RESET — MOBILE FIRST
+================================= */
+
+/* Box model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Root */
+html {
+  scroll-behavior: smooth;
+  overscroll-behavior-x: contain; /* блок бокового bounce */
+}
+
+/* Body */
+body {
+  min-height: 100vh;
+  overflow-x: hidden; /* КЛЮЧЕВОЕ */
+}
