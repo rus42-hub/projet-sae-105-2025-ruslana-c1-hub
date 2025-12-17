@@ -6,13 +6,15 @@
 
   <title>Effet Matilda</title>
 
-<link rel="stylesheet" href="src/css/vendors/normalize.css">
-<link rel="stylesheet" href="src/css/style.css">
+<link rel="stylesheet" href="/src/css/vendors/normalize.css">
+<link rel="stylesheet" href="/src/css/style.css">
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+  <link rel="icon" href="/assets/icons/favicon.png" type="image/png">
+
 </head>
 
 <body>
@@ -41,10 +43,11 @@
 
   <!-- LANG + CLOSE -->
   <div class="menu__top">
-    <div class="menu__lang">
-      <button class="menu__lang-btn is-active">FR</button>
-      <button class="menu__lang-btn">EN</button>
-    </div>
+<div class="menu__lang">
+  <a href="/fr/index.html" class="menu__lang-btn">FR</a>
+  <a href="/en/index-en.html" class="menu__lang-btn is-active">EN</a>
+</div>
+
 
     <button class="menu__close" id="closeMenuBtn">
       <img src="/assets/icons/close.svg" alt="Fermer">
@@ -56,26 +59,27 @@
 
   <!-- NAV -->
 <nav class="menu__nav">
-  <a class="menu__item" href="#">Accueil</a>
+  <a class="menu__item" href="/en/index-en.html">Home</a>
   <span class="menu__divider"></span>
 
-  <a class="menu__item" href="#">À propos</a>
+  <a class="menu__item" href="/en/about.html">About</a>
   <span class="menu__divider"></span>
 
-  <a class="menu__item" href="#">Sofia Kovalevskaïa</a>
+  <a class="menu__item" href="/en/sofia-kovalevskaya.html">Sofia Kovalevskaya</a>
   <span class="menu__divider"></span>
 
-  <a class="menu__item" href="#">Articles</a>
+  <a class="menu__item" href="/en/articles.html">Articles</a>
   <span class="menu__divider"></span>
 
-  <a class="menu__item" href="#">Films & Vidéos</a>
+  <a class="menu__item" href="/en/films-videos.html">Films & Videos</a>
   <span class="menu__divider"></span>
 
-  <a class="menu__item" href="#">Autres projets</a>
+  <a class="menu__item" href="/en/other-projects.html">Other projects</a>
   <span class="menu__divider"></span>
 
-  <a class="menu__item" href="#">Contact</a>
+  <a class="menu__item" href="/en/contact.html">Contact</a>
 </nav>
+
 
 
 </div>
@@ -102,8 +106,8 @@
 
 
   <section class="about">
-  <h2 class="about__name">Sofia Kovalevskaïa</h2>
-  <p class="about__subtitle">Mathématicienne, pionnière</p>
+  <h2 class="about__name">Sofia Kovalevskaya</h2>
+  <p class="about__subtitle">mathematician, pioneer</p>
 
   <img src="/assets/icons/ligne.svg" alt="" class="about__divider">
 
@@ -111,7 +115,7 @@
 
   <button class="about__button">
     <img src="/assets/banners/Frame-bouton.svg" alt="button frame">
-    <span class="about__button-text">Découvrir son histoire</span>
+    <span class="about__button-text">Discover her story</span>
   </button>
 
   <article class="story-card">
@@ -121,14 +125,14 @@
     <img class="star star--br" src="/assets/icons/etoile.svg" alt="">
     
     <p class="story__text">
-      Depuis l’Antiquité, la femme a été destinée à garder le foyer.<br>
-      Elle devait être douce, patiente, obéissante.<br><br>
-      Mais un jour, elles sont apparues — celles qui refusaient ce destin.<br>
-      Celles qui lisaient quand tout le monde dormait.<br>
-      Celles qui frappaient aux portes closes de la science.<br><br>
-      Parmi elles — Sofia Kovalevskaïa.<br>
-      La première femme professeure de mathématiques en Europe.<br><br>
-      Une voix qu’on a trop longtemps réduite au silence.
+      Since Antiquity, women were destined to stay at home.<br>
+      They were expected to be gentle, patient, obedient.<br><br>
+      But one day, they appeared — those who refused that fate.<br>
+      Those who read when everyone else was asleep.<br>
+      Those who knocked on the closed doors of science.<br><br>
+      Among them — Sofia Kovalevskaya.<br>
+      The first woman professor of mathematics in Europe.<br><br>
+      A voice that was silenced for far too long.
     </p>
   </article>
 </section>
@@ -138,9 +142,9 @@
   <section class="matilda">
     <article class="matilda__definition">
       <p>
-        <strong>L’Effet Matilda</strong> désigne le phénomène par lequel
-        les découvertes des femmes scientifiques ont été attribuées
-        à leurs collègues masculins.
+        <strong>The “Matilda Effect”</strong> refers to the phenomenon in which the discoveries of 
+        women scientists were attributed to their male colleagues — a deeper way of 
+        denying their place and contribution in the history of science.
       </p>
     </article>
 
@@ -150,7 +154,7 @@
 
   <!-- TITRE DE LA FRISE -->
 <h2 id="timeline-title" class="matilda__title">
-  Frise des Matilda
+  Matilda Timeline
 </h2>
 
 
@@ -171,14 +175,14 @@
     </div>
 
     <h3 class="timeline__name">Ada Lovelace</h3>
-    <p class="timeline__era">Milieu XIXe</p>
+    <p class="timeline__era">mid-19th century</p>
 
     <div class="timeline__expand">
       <img src="/assets/banners/frame-expand.svg" alt="" class="timeline__expand-bg">
       <p class="timeline__expand-text">
-            Elle invente la <br>
-        programmation, mais on <br>
-        l'oublie longtemps
+            She invented <br>
+        programming, yet was <br>
+        forgotten for decades
       </p>
     </div>
   </article>
@@ -195,14 +199,14 @@
     </div>
 
     <h3 class="timeline__name">Mileva Marić</h3>
-    <p class="timeline__era">Début XXe</p>
+    <p class="timeline__era">early 20th century</p>
 
     <div class="timeline__expand">
       <img src="/assets/banners/frame-expand.svg" alt="" class="timeline__expand-bg">
       <p class="timeline__expand-text">
-        Elle collabore avec<br>
-        Einstein, mais son nom<br>
-        disparaît
+        She collaborated with <br>
+        Einstein, but her name<br>
+        disappeared
       </p>
     </div>
   </article>
@@ -219,14 +223,14 @@
     </div>
 
     <h3 class="timeline__name">Lise Meitner</h3>
-    <p class="timeline__era">1930-40s</p>
+    <p class="timeline__era">1930s–40s</p>
 
     <div class="timeline__expand">
       <img src="/assets/banners/frame-expand.svg" alt="" class="timeline__expand-bg">
       <p class="timeline__expand-text">
-           Elle découvre la fission,<br>
-        mais son collègue reçoit le<br>
-        Nobel
+           She discovered nuclear <br>
+        fission, but her colleague<br>
+        received the Nobel Prize
       </p>
     </div>
   </article>
@@ -249,8 +253,8 @@
     <div class="timeline__expand">
       <img src="/assets/banners/frame-expand.svg" alt="" class="timeline__expand-bg">
       <p class="timeline__expand-text">
-      Elle photographie l'ADN,<br>
-        mais on lui vole la gloire
+      She photographed DNA,<br>
+        but her glory was stolen
       </p>
     </div>
   </article>
@@ -274,9 +278,9 @@
     <div class="timeline__expand">
       <img src="/assets/banners/frame-expand.svg" alt="" class="timeline__expand-bg">
       <p class="timeline__expand-text">
-      Elle découvre les pulsars,<br>
-        mais son directeur reçoit<br>
-        le prix
+      She discovered pulsars,<br>
+        but her supervisor<br>
+        received the award
       </p>
     </div>
   </article>
@@ -296,7 +300,7 @@
 
   <button class="stars-btn">
     <img src="/assets/banners/Frame-bouton.svg" alt="button frame" class="stars-btn-bg">
-    <span class="stars-btn-text">Découvrir les articles</span>
+    <span class="stars-btn-text">Discover the articles</span>
   </button>
 </section>
 
@@ -315,11 +319,11 @@
     <img src="/assets/icons/mail.svg" alt="" class="footer__mail">
 
     <p class="footer__text footer__text--line1">
-      Un projet visuel autour de la mémoire des femmes scientifiques
+      A visual project about the memory of women in science
     </p>
 
     <p class="footer__text footer__text--line2">
-      Projet réalisé en 2025 —
+      Project created in 2025 —
       <a class="footer__link"
          href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/"
          target="_blank">
@@ -332,6 +336,6 @@
 
 
 
-<script src="/src/js/main.js"></script>
+<script src="/src/js/main-en.js"></script>
 </body>
 </html>

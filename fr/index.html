@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Effet Matilda</title>
+
+<link rel="stylesheet" href="/src/css/vendors/normalize.css">
+<link rel="stylesheet" href="/src/css/style.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+  <link rel="icon" href="/assets/icons/favicon.png" type="image/png">
+
+</head>
+
+<body>
+
+
+
+    
+<header class="header">
+  <div class="header__inner">
+    <img src="/assets/img/logo.svg" alt="logo" class="header__logo">
+
+    <h1 class="header__title">EFFET MATILDA</h1>
+
+    <button class="header__menu-btn" id="openMenuBtn">
+      <img src="/assets/icons/menu.svg" alt="menu">
+    </button>
+  </div>
+
+
+</header>
+
+
+
+<!-- MENU OVERLAY -->
+<div class="menu" id="menuContainer">
+
+  <!-- LANG + CLOSE -->
+  <div class="menu__top">
+     <div class="menu__lang">
+     <a href="/fr/index.html" class="menu__lang-btn is-active">FR</a>
+     <a href="/en/index-en.html" class="menu__lang-btn">EN</a>
+  </div>
+
+
+    <button class="menu__close" id="closeMenuBtn">
+      <img src="/assets/icons/close.svg" alt="Fermer">
+    </button>
+  </div>
+
+  <!-- SPACE 34px -->
+  <div class="menu__spacer"></div>
+
+  <!-- NAV -->
+<nav class="menu__nav">
+  <a class="menu__item" href="/fr/index.html">Accueil</a>
+  <span class="menu__divider"></span>
+
+  <a class="menu__item" href="/fr/about.html">À propos</a>
+  <span class="menu__divider"></span>
+
+  <a class="menu__item" href="/fr/sofia-kovalevskaia.html">Sofia Kovalevskaïa</a>
+  <span class="menu__divider"></span>
+
+  <a class="menu__item" href="/fr/articles.html">Articles</a>
+  <span class="menu__divider"></span>
+
+  <a class="menu__item" href="/fr/films-videos.html">Films & Vidéos</a>
+  <span class="menu__divider"></span>
+
+  <a class="menu__item" href="/fr/autres-projets.html">Autres projets</a>
+  <span class="menu__divider"></span>
+
+  <a class="menu__item" href="/fr/contact.html">Contact</a>
+</nav>
+
+
+
+</div>
+
+
+
+
+
+<main>
+
+<section class="hero">
+  <div class="hero__media">
+    <img src="/assets/img/Sofia.webp" alt="Sofia Kovalevskaïa" class="hero__image">
+    <div class="hero__gradient"></div>
+  </div>
+
+  <div class="hero__dialogue">
+    <img src="/assets/banners/frame-dialogue.svg" alt="" class="hero__frame">
+    <p class="hero__text" id="heroText"></p>
+  </div>
+</section>
+
+
+
+
+  <section class="about">
+  <h2 class="about__name">Sofia Kovalevskaïa</h2>
+  <p class="about__subtitle">Mathématicienne, pionnière</p>
+
+  <img src="/assets/icons/ligne.svg" alt="" class="about__divider">
+
+
+
+  <button class="about__button">
+    <img src="/assets/banners/Frame-bouton.svg" alt="button frame">
+    <span class="about__button-text">Découvrir son histoire</span>
+  </button>
+
+  <article class="story-card">
+    <img class="star star--tl" src="/assets/icons/etoile.svg" alt="">
+    <img class="star star--tr" src="/assets/icons/etoile.svg" alt="">
+    <img class="star star--bl" src="/assets/icons/etoile.svg" alt="">
+    <img class="star star--br" src="/assets/icons/etoile.svg" alt="">
+    
+    <p class="story__text">
+      Depuis l’Antiquité, la femme a été destinée à garder le foyer.<br>
+      Elle devait être douce, patiente, obéissante.<br><br>
+      Mais un jour, elles sont apparues — celles qui refusaient ce destin.<br>
+      Celles qui lisaient quand tout le monde dormait.<br>
+      Celles qui frappaient aux portes closes de la science.<br><br>
+      Parmi elles — Sofia Kovalevskaïa.<br>
+      La première femme professeure de mathématiques en Europe.<br><br>
+      Une voix qu’on a trop longtemps réduite au silence.
+    </p>
+  </article>
+</section>
+
+
+  <!-- MATILDA -->
+  <section class="matilda">
+    <article class="matilda__definition">
+      <p>
+        <strong>L’Effet Matilda</strong> désigne le phénomène par lequel
+        les découvertes des femmes scientifiques ont été attribuées
+        à leurs collègues masculins.
+      </p>
+    </article>
+
+
+  </section>
+
+
+  <!-- TITRE DE LA FRISE -->
+<h2 id="timeline-title" class="matilda__title">
+  Frise des Matilda
+</h2>
+
+
+
+<!-- FRISE / TIMELINE -->
+<section class="timeline">
+    
+
+  <div class="timeline__line"></div>
+
+  <article class="timeline__item">
+    <div class="timeline__media">
+      <img src="/assets/img/ada.webp" alt="Ada Lovelace" class="timeline__image">
+
+      <button class="timeline__toggle" aria-expanded="false">
+        <img src="/assets/icons/expand.svg" alt="">
+      </button>
+    </div>
+
+    <h3 class="timeline__name">Ada Lovelace</h3>
+    <p class="timeline__era">Milieu XIXe</p>
+
+    <div class="timeline__expand">
+      <img src="/assets/banners/frame-expand.svg" alt="" class="timeline__expand-bg">
+      <p class="timeline__expand-text">
+            Elle invente la <br>
+        programmation, mais on <br>
+        l'oublie longtemps
+      </p>
+    </div>
+  </article>
+
+  
+  
+    <article class="timeline__item">
+    <div class="timeline__media">
+      <img src="/assets/img/Mileva.webp" alt="Mileva Marić" class="timeline__image">
+
+      <button class="timeline__toggle" aria-expanded="false">
+        <img src="/assets/icons/expand.svg" alt="">
+      </button>
+    </div>
+
+    <h3 class="timeline__name">Mileva Marić</h3>
+    <p class="timeline__era">Début XXe</p>
+
+    <div class="timeline__expand">
+      <img src="/assets/banners/frame-expand.svg" alt="" class="timeline__expand-bg">
+      <p class="timeline__expand-text">
+        Elle collabore avec<br>
+        Einstein, mais son nom<br>
+        disparaît
+      </p>
+    </div>
+  </article>
+
+
+
+    <article class="timeline__item">
+    <div class="timeline__media">
+      <img src="/assets/img/Lise.webp" alt="Lise Meitner" class="timeline__image">
+
+      <button class="timeline__toggle" aria-expanded="false">
+        <img src="/assets/icons/expand.svg" alt="">
+      </button>
+    </div>
+
+    <h3 class="timeline__name">Lise Meitner</h3>
+    <p class="timeline__era">1930-40s</p>
+
+    <div class="timeline__expand">
+      <img src="/assets/banners/frame-expand.svg" alt="" class="timeline__expand-bg">
+      <p class="timeline__expand-text">
+           Elle découvre la fission,<br>
+        mais son collègue reçoit le<br>
+        Nobel
+      </p>
+    </div>
+  </article>
+
+
+
+
+    <article class="timeline__item">
+    <div class="timeline__media">
+      <img src="/assets/img/Rosalind.webp" alt="Rosalind Franklin" class="timeline__image">
+
+      <button class="timeline__toggle" aria-expanded="false">
+        <img src="/assets/icons/expand.svg" alt="">
+      </button>
+    </div>
+
+    <h3 class="timeline__name">Rosalind Franklin</h3>
+    <p class="timeline__era">1950s</p>
+
+    <div class="timeline__expand">
+      <img src="/assets/banners/frame-expand.svg" alt="" class="timeline__expand-bg">
+      <p class="timeline__expand-text">
+      Elle photographie l'ADN,<br>
+        mais on lui vole la gloire
+      </p>
+    </div>
+  </article>
+
+
+
+
+
+    <article class="timeline__item">
+    <div class="timeline__media">
+      <img src="/assets/img/Jocelyn.webp" alt="Jocelyn Bell Burnell" class="timeline__image">
+
+      <button class="timeline__toggle" aria-expanded="false">
+        <img src="/assets/icons/expand.svg" alt="">
+      </button>
+    </div>
+
+    <h3 class="timeline__name">Jocelyn Bell Burnell</h3>
+    <p class="timeline__era">1960s</p>
+
+    <div class="timeline__expand">
+      <img src="/assets/banners/frame-expand.svg" alt="" class="timeline__expand-bg">
+      <p class="timeline__expand-text">
+      Elle découvre les pulsars,<br>
+        mais son directeur reçoit<br>
+        le prix
+      </p>
+    </div>
+  </article>
+  
+</section>
+
+
+  
+
+<!-- STARS SECTION -->
+<section class="stars-section">
+  <div class="stars-row">
+    <img src="/assets/icons/etoile.svg" class="star star--small" alt="">
+    <img src="/assets/icons/etoile.svg" class="star star--big" alt="">
+    <img src="/assets/icons/etoile.svg" class="star star--small" alt="">
+  </div>
+
+  <button class="stars-btn">
+    <img src="/assets/banners/Frame-bouton.svg" alt="button frame" class="stars-btn-bg">
+    <span class="stars-btn-text">Découvrir les articles</span>
+  </button>
+</section>
+
+
+
+
+
+
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+
+    <img src="/assets/img/logo.svg" alt="" class="footer__logo">
+    <img src="/assets/icons/mail.svg" alt="" class="footer__mail">
+
+    <p class="footer__text footer__text--line1">
+      Un projet visuel autour de la mémoire des femmes scientifiques
+    </p>
+
+    <p class="footer__text footer__text--line2">
+      Projet réalisé en 2025 —
+      <a class="footer__link"
+         href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/"
+         target="_blank">
+        MMi de Montbéliard
+      </a>
+    </p>
+
+  </div>
+</footer>
+
+
+
+<script src="/src/js/main.js"></script>
+</body>
+</html>
