@@ -11,6 +11,8 @@
   --color-bg-secondary: #261F22;   /* Aubergine Shadow */
   --color-bg-dark: #25151B;        /* Dark Plum */
   --color-bg-page: #131108;
+  --color-bg-tag: #261F22;    /* genre */
+  --color-bg-accent: #301010; /* time of film */
 
   /* Accents */
   --color-accent-primary: #301010; /* Wine Brown */
@@ -22,6 +24,7 @@
   --color-gold: #C19A6B;           /* Gold Sand */
   --color-gold-soft: #EBD6A9;      /* Soft Gold */
   --color-frame-dark: #25151B;    /* Dark Plum */
+
 
   /* Text */
   --color-text-main: #C9C5BA;      /* Stone Beige */
