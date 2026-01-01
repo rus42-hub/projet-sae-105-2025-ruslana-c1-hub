@@ -179,13 +179,19 @@ body {
 .story-card .star {
   position: absolute;
   width: 18px;
-  height: auto;
+  height: 18px; /* было auto */
 }
 
-.star--tl { top: 10px; left: 8px; }
-.star--tr { top: 10px; right: 8px; }
-.star--bl { bottom: 10px; left: 8px; }
-.star--br { bottom: 10px; right: 8px; }
+
+.story-card .star--tl { top: 20px; left: 8px; }
+.story-card .star--tr {
+  top: 20px;
+  left: calc(100% - 8px - 18px);
+}
+.story-card .star--bl { bottom: 10px; left: 8px; }
+.story-card .star--br { bottom: 10px; right: 8px; }
+
+
 
 /* Text histoire */
 .story__text {
