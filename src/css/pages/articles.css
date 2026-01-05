@@ -3,24 +3,26 @@
 .articles-page {
   display: flex;
   flex-direction: column;
+  align-items: center; /* выравнивание карточек по центру */
 }
 
-
-
 /* ======= Article card ======= */
-
 .article-card {
   display: flex;
   flex-direction: column;
+  max-width: 393px;
+  width: 100%;
+  margin-bottom: 36px;
 }
-
 
 /* Img */
 .article-card__image {
+  position: relative;
   width: 100%;
   max-width: 393px;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 3/2;
   overflow: hidden;
+
 }
 
 .article-card__image img {
@@ -30,86 +32,112 @@
   display: block;
 }
 
-/* Title article */
+/* Gradient plate */
+.article-card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 79px;
+  background: linear-gradient(
+    to top,
+    #131108 0%,
+    rgba(37,21,27,0.75) 58%,
+    rgba(37,21,27,0) 100%
+  );
+  display: flex;
+  align-items: flex-start;
+  padding: 23px 0 0 20px;
+}
+
+/* Heading on the die */
+.article-card__title-overlay {
+  font-family: var(--ff-text);
+  font-size: 17px;
+  font-weight: var(--fw-semibold);
+  line-height: 1.29168;
+  color: var(--color-text-main);
+  max-width: 357px;
+}
+
+/* Header for special cards (without a plate) */
 .article-card__title {
   margin-top: 9px;
   margin-left: 20px;
-
   width: 357px;
   max-width: calc(100% - 36px);
-
   font-family: var(--ff-text);
-  font-size: 1.0625rem; /* 17px */
+  font-size: 17px;
   font-weight: var(--fw-semibold);
   line-height: 1.29168;
-
   color: var(--color-text-main);
   text-align: left;
 }
 
-/* Date */
-.article-card__date {
-  margin-top: 11px;
+/* Omit text on Article 3 */
+.article-card__overlay--lower {
+  padding-top: 50px;
+}
+
+/* Raise the text on the 4th article */
+.article-card__overlay--higher {
+  padding-top: 14px;
+}
+
+
+
+/* Date of publication */
+.article__meta {
+  margin-top: 14px;
   margin-left: 20px;
-
-  width: 195px;
-  height: 15px;
-
   font-family: var(--ff-text);
-  font-size: 0.6875rem; /* 11px */
+  font-size: 11px;
   font-weight: var(--fw-regular);
   line-height: 1.29168;
-
   color: var(--color-text-main);
 }
 
-/* Batton */
-.article-card__button-wrapper {
-  width: 100%;
-  max-width: 393px;
+/* Reading time */
+.article__meta--small {
+  margin-top: 9px;
+  margin-left: 20px;
+  font-family: var(--ff-text);
+  font-size: 11px;
+  font-weight: var(--fw-regular);
+  line-height: 1.29168;
+  color: var(--color-text-main);
+}
 
+/* Button */
+.article-card__button-wrapper {
+  margin-top: 1px;
   display: flex;
   justify-content: flex-end;
-
-  margin-top: -10px;
   padding-right: 16px;
-  
 }
 
 .article-card__button {
   width: 95px;
   height: 30px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   border-radius: var(--radius-sm);
   border: 1px solid #CCC;
   background: var(--color-accent-secondary);
-
   font-family: var(--ff-text);
   font-size: var(--fs-base);
   font-weight: var(--fw-regular);
-  line-height: 1.29168;
-
   color: var(--color-text-main);
   text-decoration: none;
 }
 
-
+/* Special picture for the fifth article */
 .article-card__image--narrow {
   width: 168px;
   height: 239px;
-
   aspect-ratio: unset;
   overflow: visible;
   margin: 0 auto;
-
   border-radius: var(--radius-md);
-}
-
-
-.section--end {
-  margin-bottom: 67px;
 }

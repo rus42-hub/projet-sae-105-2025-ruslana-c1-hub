@@ -52,21 +52,4 @@ document.addEventListener('DOMContentLoaded', () => {
   prevBtn.addEventListener('click', movePrev);
 
   update();
-
-  // Loading a YouTube iframe when clicking on a card 
-  allCards.forEach(card => {
-    const frame = card.querySelector('.video-frame');
-    const img = frame.querySelector('img');
-    const videoId = img.src.match(/vi\/([a-zA-Z0-9_-]+)/)[1];
-
-    frame.addEventListener('click', () => {
-      const iframe = document.createElement('iframe');
-      iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-      iframe.frameBorder = '0';
-      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-      iframe.allowFullscreen = true;
-      frame.innerHTML = '';
-      frame.appendChild(iframe);
-    });
-  });
 });
