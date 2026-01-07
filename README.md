@@ -6,5 +6,5 @@
 - NOM : Budniak
 - PRÉNOM : Ruslana
 - GROUPE : C1
-- URL du site :
+- URL du site : https://sofia-kovalevskaya-effet-matilda.netlify.app/fr/films-videos-fr
 - URL FIGMA : https://www.figma.com/design/yRPo6GElvbTCX0aIWv34sS/L-effet-Mathilda---BUDNIAK-Ruslana-C1?node-id=369-38716&m=dev
