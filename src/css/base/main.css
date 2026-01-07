@@ -14,16 +14,14 @@
 /* Root */
 html {
   scroll-behavior: smooth;
-  overscroll-behavior-x: contain; /* блок бокового bounce */
+  overscroll-behavior-x: contain; /* side bounce block */
 }
 
 /* Body */
 body {
   min-height: 100vh;
-  overflow-x: hidden; /* КЛЮЧЕВОЕ */
+  overflow-x: hidden;
 }
-
-
 
 /* Body global */
 body {

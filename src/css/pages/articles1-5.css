@@ -52,10 +52,12 @@
 .article__intro-card {
   margin: 24px auto 0;
   width: 335px;
-  height: 127px;
+  
 
   background: var(--color-bg-dark);
   border-radius: 10px;
+
+  padding: 18px 0;
 
   display: flex;
   align-items: center;
@@ -111,10 +113,12 @@
   margin-left: auto;
   margin-right: auto;
   width: 311px;
-  height: 78px;
+
 
   background: var(--color-bg-dark);
   border-radius: 10px;
+
+  padding: 18px 0;
 
   display: flex;
   align-items: center;
@@ -171,4 +175,60 @@
   color: #CBCBCB;
 
   text-decoration: none;
+}
+
+
+
+/* ======= Article 2 ======= */
+
+/* ===== Mechanism block ===== */
+
+.article__mechanism {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  width: 350px;
+}
+
+/* Small top plate */
+.article__mechanism-cap {
+  background: #0E0D06;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+/* Text label */
+.article__mechanism-label {
+  margin: 0;
+
+  font-family: var(--ff-text);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-semibold);
+  line-height: 1.29168;
+  color: var(--color-text-main);
+  text-align: center;
+
+}
+
+/* Main plate */
+.article__mechanism-header {
+  background: var(--color-bg-secondary);
+  border-radius: 0 0 10px 10px;
+  
+}
+
+/* Text 2 */
+.article__mechanism-text {
+  margin: 11px 0 0;
+  padding: 14px;
+  width: 323px;
+
+  font-family: var(--ff-text);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-regular);
+  line-height: 1.29168;
+  color: #DDD;
+  text-align: left;
 }
